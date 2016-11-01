@@ -17,11 +17,23 @@ public class RetailPrice
         double price,total;
         int percentage;
 
-        System.out.println("Please enter price: ");
+        System.out.println("Please enter the price: ");
         price = keyboard.nextDouble();
 
-        System.out.println("Please enter markup percentage: ");
+        while(price < 0)
+        {
+            System.out.println("Price cannot be negative. Enter a positive price");
+            price = keyboard.nextDouble();
+        }
+
+        System.out.println("Please enter the markup percentage: ");
         percentage = keyboard.nextInt();
+
+        while(percentage < 0)
+        {
+            System.out.println("Percentage cannot be negative. Please enter a positive percentage.");
+            percentage = keyboard.nextInt();
+        }
 
         total = price + price / 100 * percentage;
 
