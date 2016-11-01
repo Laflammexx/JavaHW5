@@ -1,4 +1,4 @@
-//Gio Amirajibi
+//Jermaine cool code
 
 import java.util.*;
 import java.text.DecimalFormat;
